@@ -1,0 +1,65 @@
+﻿<!-- MainWindow.xaml -->
+<Window x:Class="KonataClock.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="XP Clock"
+        Height="298" Width="184"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        WindowStartupLocation="Manual"
+        ShowInTaskbar="False">
+    <Grid MouseLeftButtonDown="Window_MouseLeftButtonDown">
+        <Border CornerRadius="10" Background="#00000000">
+            <Grid>
+
+                <Image x:Name="MyImageControl" />
+                <TextBlock x:Name="ClockText_hours"
+                           VerticalAlignment="Top"
+                           HorizontalAlignment="Left"
+                           FontSize="35"
+                           FontWeight="Bold"
+                           Foreground="White"
+                           Text="00"
+                           Margin="48,233,0,0"
+                           Height="43"
+                           Width="42"/>
+                <Grid x:Name="seperator">
+                    <TextBlock x:Name="ClockText_sepertor1"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Left"
+                    FontSize="15"
+                    FontWeight="Bold"
+                    Foreground="White"
+                    Text="★"
+                    Margin="90,241,0,0"
+                    Height="35"
+                    Width="13"/>
+
+                    <TextBlock x:Name="ClockText_sepertor2"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Left"
+                    FontSize="15"
+                    FontWeight="Bold"
+                    Foreground="White"
+                    Text="★"
+                    Margin="90,256,0,0"
+                    Height="20"
+                    Width="13"/>
+                </Grid>
+                <TextBlock x:Name="ClockText_minutes"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Left"
+                    FontSize="35"
+                    FontWeight="Bold"
+                    Foreground="White"
+                    Text="00"
+                    Margin="105,233,0,0"
+                    Height="43"
+                    Width="42"/>
+                <Button Content="Button" HorizontalAlignment="Left" Margin="69,124,0,0" VerticalAlignment="Top" Opacity="0" Click="Button_Click"/>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>
